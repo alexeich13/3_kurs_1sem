@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "Pxi8+1JsL1s7gVk1x5xyG5G/4u1pW1z7pshBU/pCluE=",
+  "Source": "ASPMVC05",
+  "BasePath": "_content/ASPMVC05",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASPMVC05\\wwwroot",
+      "Source": "ASPMVC05",
+      "ContentRoot": "C:\\BSTU\\3 kurs\\3 kurs 1 sem\\DWA\\lab2a\\lab2a\\ASPMVC05\\wwwroot\\",
+      "BasePath": "_content/ASPMVC05",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

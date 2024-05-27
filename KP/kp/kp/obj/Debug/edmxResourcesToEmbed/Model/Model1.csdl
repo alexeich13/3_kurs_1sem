@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_KPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bookings">
+    <Key>
+      <PropertyRef Name="booking_id" />
+    </Key>
+    <Property Name="booking_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="users_id" Type="Int32" />
+    <Property Name="package_id" Type="Int32" />
+    <Property Name="booking_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="payment_status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Packages" Relationship="Self.FK__Bookings__packag__44FF419A" FromRole="Bookings" ToRole="Packages" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Bookings__users___440B1D61" FromRole="Bookings" ToRole="Users" />
+    <NavigationProperty Name="Payments" Relationship="Self.FK__Payments__bookin__47DBAE45" FromRole="Bookings" ToRole="Payments" />
+  </EntityType>
+  <EntityType Name="Destinations">
+    <Key>
+      <PropertyRef Name="destination_id" />
+    </Key>
+    <Property Name="destination_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="country_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="city_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Packages" Relationship="Self.FK__Packages__destin__3E52440B" FromRole="Destinations" ToRole="Packages" />
+  </EntityType>
+  <EntityType Name="Packages">
+    <Key>
+      <PropertyRef Name="package_id" />
+    </Key>
+    <Property Name="package_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tour_operator_id" Type="Int32" />
+    <Property Name="destination_id" Type="Int32" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="end_date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Bookings__packag__44FF419A" FromRole="Packages" ToRole="Bookings" />
+    <NavigationProperty Name="Destinations" Relationship="Self.FK__Packages__destin__3E52440B" FromRole="Packages" ToRole="Destinations" />
+    <NavigationProperty Name="TourOperators" Relationship="Self.FK__Packages__tour_o__3D5E1FD2" FromRole="Packages" ToRole="TourOperators" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="payment_id" />
+    </Key>
+    <Property Name="payment_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="booking_id" Type="Int32" />
+    <Property Name="payment_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Payments__bookin__47DBAE45" FromRole="Payments" ToRole="Bookings" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="role_id" />
+    </Key>
+    <Property Name="role_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="role_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__role_id__412EB0B6" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TourOperators">
+    <Key>
+      <PropertyRef Name="tour_operator_id" />
+    </Key>
+    <Property Name="tour_operator_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contact_info" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="website" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Packages" Relationship="Self.FK__Packages__tour_o__3D5E1FD2" FromRole="TourOperators" ToRole="Packages" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="users_id" />
+    </Key>
+    <Property Name="users_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="last_name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="login_user" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password_user" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="role_id" Type="Int32" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Bookings__users___440B1D61" FromRole="Users" ToRole="Bookings" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK__Users__role_id__412EB0B6" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK__Bookings__packag__44FF419A">
+    <End Role="Packages" Type="Self.Packages" Multiplicity="0..1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Packages">
+        <PropertyRef Name="package_id" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="package_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookings__users___440B1D61">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="users_id" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="users_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payments__bookin__47DBAE45">
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="0..1" />
+    <End Role="Payments" Type="Self.Payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bookings">
+        <PropertyRef Name="booking_id" />
+      </Principal>
+      <Dependent Role="Payments">
+        <PropertyRef Name="booking_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Packages__destin__3E52440B">
+    <End Role="Destinations" Type="Self.Destinations" Multiplicity="0..1" />
+    <End Role="Packages" Type="Self.Packages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Destinations">
+        <PropertyRef Name="destination_id" />
+      </Principal>
+      <Dependent Role="Packages">
+        <PropertyRef Name="destination_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Packages__tour_o__3D5E1FD2">
+    <End Role="TourOperators" Type="Self.TourOperators" Multiplicity="0..1" />
+    <End Role="Packages" Type="Self.Packages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TourOperators">
+        <PropertyRef Name="tour_operator_id" />
+      </Principal>
+      <Dependent Role="Packages">
+        <PropertyRef Name="tour_operator_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__role_id__412EB0B6">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="role_id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_KPEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bookings" EntityType="Self.Bookings" />
+    <EntitySet Name="Destinations" EntityType="Self.Destinations" />
+    <EntitySet Name="Packages" EntityType="Self.Packages" />
+    <EntitySet Name="Payments" EntityType="Self.Payments" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TourOperators" EntityType="Self.TourOperators" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK__Bookings__packag__44FF419A" Association="Self.FK__Bookings__packag__44FF419A">
+      <End Role="Packages" EntitySet="Packages" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookings__users___440B1D61" Association="Self.FK__Bookings__users___440B1D61">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payments__bookin__47DBAE45" Association="Self.FK__Payments__bookin__47DBAE45">
+      <End Role="Bookings" EntitySet="Bookings" />
+      <End Role="Payments" EntitySet="Payments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Packages__destin__3E52440B" Association="Self.FK__Packages__destin__3E52440B">
+      <End Role="Destinations" EntitySet="Destinations" />
+      <End Role="Packages" EntitySet="Packages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Packages__tour_o__3D5E1FD2" Association="Self.FK__Packages__tour_o__3D5E1FD2">
+      <End Role="TourOperators" EntitySet="TourOperators" />
+      <End Role="Packages" EntitySet="Packages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__role_id__412EB0B6" Association="Self.FK__Users__role_id__412EB0B6">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

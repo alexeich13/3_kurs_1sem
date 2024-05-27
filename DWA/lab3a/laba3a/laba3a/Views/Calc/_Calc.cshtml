@@ -1,0 +1,17 @@
+﻿@model dynamic
+
+@{
+    string press = ViewBag.press;
+    float? x = ViewBag.x;
+    float? y = ViewBag.y;
+}
+
+<a>
+    @Html.TextBox("x", x)
+</a>
+<a>
+    @Html.TextBox("y", y)
+</a>
+<a>
+    <input type="text" name="z" placeholder="0,00" value="@ViewBag.z">
+</a>

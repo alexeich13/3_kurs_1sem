@@ -1,0 +1,32 @@
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\bin\Debug\Client_4.exe.config
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\bin\Debug\Client_4.exe
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\bin\Debug\Client_4.pdb
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.csproj.AssemblyReference.cache
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.csproj.SuggestedBindingRedirects.cache
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\MainWindow.g.cs
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\App.g.cs
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4_MarkupCompile.cache
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4_MarkupCompile.lref
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\MainWindow.baml
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.g.resources
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.Properties.Resources.resources
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.csproj.GenerateResource.cache
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.csproj.CoreCompileInputs.cache
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.exe
+E:\student\learn\3_course\1_sem\СТРWП\Lab_1\Client_4\obj\Debug\Client_4.pdb
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\bin\Debug\Client_4.exe.config
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\bin\Debug\Client_4.exe
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\bin\Debug\Client_4.pdb
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.csproj.AssemblyReference.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.csproj.SuggestedBindingRedirects.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\MainWindow.g.cs
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\App.g.cs
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4_MarkupCompile.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4_MarkupCompile.lref
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\MainWindow.baml
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.g.resources
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.Properties.Resources.resources
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.csproj.GenerateResource.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.csproj.CoreCompileInputs.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.exe
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\lab1\Client_4\obj\Debug\Client_4.pdb

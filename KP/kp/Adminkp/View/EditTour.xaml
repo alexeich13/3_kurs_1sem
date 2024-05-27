@@ -1,0 +1,35 @@
+﻿<Window x:Class="Adminkp.View.EditTour"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adminkp.View"
+        mc:Ignorable="d"
+        Title="EditTour" Height="500" Width="350" Background="#FFC0EAF6">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Номер тура" Margin="5"/>
+            <TextBox Name="TourNumber" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="ID туроператора" Margin="5"/>
+            <TextBox Name="TourOperatorId" Margin="5"/>
+            <TextBlock Text="ID местоположения" Margin="5"/>
+            <TextBox Name="DestId" Margin="5"/>
+            <TextBlock Text="Название" Margin="5"/>
+            <TextBox Name="Name" Margin="5"/>
+            <TextBlock Text="Цена" Margin="5"/>
+            <TextBox Name="Price" Margin="5"/>
+            <TextBlock Text="Дата начала" Margin="5"/>
+            <TextBox Name="StartDate" Margin="5"/>
+            <TextBlock Text="Дата окончания" Margin="5"/>
+            <TextBox Name="EndDate" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Button Content="Изменить" Margin="5" Background="#FFDADADA" Click="ChangeButton_Click"/>
+            <Button Content="Отменить" Margin="5" Background="#FFFFBFBF" Click="CancButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

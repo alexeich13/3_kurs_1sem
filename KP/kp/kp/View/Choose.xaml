@@ -1,0 +1,63 @@
+﻿<Window x:Class="kp.View.Choose"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kp.View"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Choose" Height="600" Width="800">
+    <Grid Background="#FFAADFAA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Grid.Row="0" Source="C:\BSTU\3 kurs\3 kurs 1 sem\KP\style\logo.jfif" Margin="40 10 0 10" HorizontalAlignment="Left"/>
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="10" Background="#FFD8E9F7">
+            <Label Content="Фильтр поиска" FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Center"/>
+            <Label Content="По начальной дате:" FontFamily="Times New Roman" FontSize="14" HorizontalAlignment="Left"/>
+            <DatePicker x:Name="datePickerFirst" Margin="5"/>
+            <Label Content="По конечной дате:" FontFamily="Times New Roman" FontSize="14" HorizontalAlignment="Left"/>
+            <DatePicker x:Name="datePickerSecond" Margin="5"/>
+            <!-- Фильтр по цене -->
+            <Label Content="По цене:" FontFamily="Times New Roman" FontSize="14" HorizontalAlignment="Left"/>
+            <Slider x:Name="priceSlider" Margin="5" Minimum="0" Maximum="10000" Value="{Binding FilterPrice, Mode=TwoWay}"/>
+            <TextBlock Text="{Binding ElementName=priceSlider, Path=Value, StringFormat='Цена: {0:C}'}" Margin="5"/>
+            <!-- Фильтр по местоположению -->
+            <Label Content="По городу:" FontFamily="Times New Roman" FontSize="14" HorizontalAlignment="Left"/>
+            <TextBox x:Name="locationTextBox" Margin="5" Text="{Binding FilterLocation, Mode=TwoWay}" />
+
+            <!-- Здесь можно добавить другие элементы управления для фильтрации -->
+
+            <!-- Кнопка для применения фильтров -->
+            <Button Content="Применить фильтры" Margin="5" Background="#FFE3FFC8" Click="UseFiltersButton_Click"/>
+            <Button Content="Сбросить все значения" Margin="5" Background="#FFFFBFBF" Click="DropFiltersButton_Click"/>
+            <Button Content="Показать все путевки" Margin="5" Background="#FFEEF1F4" Click="ShowPrevButton_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Главная" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="MainButton_Click"/>
+            <Button Content="История заказов" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="HistoryButton_Click"/>
+            <Button Content="Мои бронирования" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="BookingsButton_Click"/>
+            <Button Content="Выйти" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="LeftButton_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+        <DataGrid x:Name="info" Background="#FFE9F4D7" BorderBrush="White" FontSize="12" AutoGenerateColumns="False" MouseDoubleClick="Dob_Click">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" Width="30" Binding="{Binding package_id, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Цена" Width="70" Binding="{Binding price, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Страна" Width="70" Binding="{Binding country_name, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Город" Width="70" Binding="{Binding city_name, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Туроператор" Width="100" Binding="{Binding name, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата начала" Width="100" Binding="{Binding start_date, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата конца" Width="100" Binding="{Binding end_date, Mode=OneWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Просмотреть информацию" Margin="5" Background="#FFE3FFC8" Click="LookButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

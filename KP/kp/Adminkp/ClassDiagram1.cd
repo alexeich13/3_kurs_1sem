@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Adminkp.Model.ApplicationContext" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAABgAIAAAAAAAAAAAgIAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ApplicationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.Bookings" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAABAAIAAAAAAACAAAAAAAAGAAAAAAAAAhAA=</HashCode>
+      <FileName>Model\Bookings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.Destinations" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Model\Destinations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.GlobalVariablesAdmin" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\GlobalVariablesAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.Packages" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBCAAAAAIgAAAAIAAAAAAAAAIAAACECAAAAAAAAAA=</HashCode>
+      <FileName>Model\Packages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.Payments" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAACAAAIAEgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Payments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.Roles" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Roles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.TourOperators" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAIAAAIAAAAAAAEAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TourOperators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Model.Users" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAgAQAgAAAAAEAAAgAAAAEAgAAAAAAAQAA=</HashCode>
+      <FileName>Model\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adminkp.Repository.BookingRepository" Collapsed="true">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAABAAQAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\BookingRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.Repository.PackageRepository" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAABAAAAAAAAAAIAAEABAAAAQAAAAAAA=</HashCode>
+      <FileName>Repository\PackageRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.Repository.UserRepository" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAABEAAAAAAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\UserRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.AddTour" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AddTour.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.AddUser" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AddUser.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.EditTour" Collapsed="true">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\EditTour.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.InfoBookings" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAQAAAAAAABAAAAAAAgAAABIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\InfoBookings.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.InfoTours" Collapsed="true">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAABCCAAAAAgAAABIACBAAEAAAAAAAAA=</HashCode>
+      <FileName>View\InfoTours.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.InfoUsers" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAABECAAAAAkAAABIAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>View\InfoUsers.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.View.LogWindow" Collapsed="true">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAAAAAAAAAAAAgAAAAAAABAAAADABAAAAAA=</HashCode>
+      <FileName>View\LogWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Adminkp.MainWindow" Collapsed="true">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAQAAIAAAQAAAACAAAAAA=</HashCode>
+      <FileName>View\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Adminkp.Interfaces.IBaseInterface&lt;T&gt;" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBaseInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Adminkp.Interfaces.IBookingInterface" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBookingInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Adminkp.Interfaces.ITourInterface" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAIAAEABAAAAQAAAAAAA=</HashCode>
+      <FileName>Interfaces\ITourInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Adminkp.Interfaces.IUserInterface" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABEAAAAAAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUserInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

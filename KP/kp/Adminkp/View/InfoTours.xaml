@@ -1,0 +1,51 @@
+﻿<Page x:Class="Adminkp.View.InfoTours"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Adminkp.View"
+      mc:Ignorable="d" 
+      Loaded="Window_Loaded"
+      d:DesignHeight="650" d:DesignWidth="1000" Background="#FFC0EAF6"
+      Title="InfoTours">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" >
+            <TextBlock Text="ID тура" Margin="5"/>
+            <TextBox Name="TourId" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Туроператор" Margin="5"/>
+            <TextBox Name="TourOperator" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Название тура" Margin="5"/>
+            <TextBox Name="TourName" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Дата начала" Margin="5"/>
+            <TextBox Name="StartDate" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Дата окончания" Margin="5"/>
+            <TextBox Name="EndDate" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Цена" Margin="5"/>
+            <TextBox Name="TourPrice" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Страна" Margin="5"/>
+            <TextBox Name="TourCountry" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Город" Margin="5"/>
+            <TextBox Name="TourCity" IsReadOnly="True" Margin="5"/>
+            <Button Content="Добавить" Margin="5" Background="#FFE3FFC8" Click="AddButton_Click"/>
+            <Button Content="Удалить" Margin="5" Background="#FFFFBFBF" Click="DelButton_Click"/>
+            <Button Content="Изменить" Margin="5" Background="#FFEEF1F4" Click="EditButton_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="iform" Grid.Column="1" AutoGenerateColumns="False" MouseLeftButtonUp="ShowData" MouseDoubleClick="Dob_Click">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Width="*" Binding="{Binding package_id, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Туроператор" Width="*" Binding="{Binding name, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Название тура" Width="*" Binding="{Binding description, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата начала" Width="*" Binding="{Binding start_date, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата окончания" Width="*" Binding="{Binding end_date, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding price, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Страна" Width="*" Binding="{Binding country_name, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Город" Width="*" Binding="{Binding city_name, Mode=OneWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

@@ -1,0 +1,54 @@
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\appsettings.Development.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\appsettings.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.exe
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.deps.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.runtimeconfig.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.dll
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.pdb
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.GeneratedMSBuildEditorConfig.editorconfig
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.AssemblyInfoInputs.cache
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.AssemblyInfo.cs
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.csproj.CoreCompileInputs.cache
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.MvcApplicationPartsAssemblyInfo.cache
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.RazorAssemblyInfo.cache
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.RazorAssemblyInfo.cs
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.laba3a.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.build.laba3a.props
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.laba3a.props
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.laba3a.props
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets.build.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets.development.json
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\scopedcss\bundle\laba3a.styles.css
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.dll
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\refint\laba3a.dll
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.pdb
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.genruntimeconfig.cache
+E:\Belstu\3k1s\MDTWP\laba3\laba3a\laba3a\obj\Debug\net7.0\ref\laba3a.dll
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\appsettings.Development.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\appsettings.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.exe
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.deps.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.runtimeconfig.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.dll
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\bin\Debug\net7.0\laba3a.pdb
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.GeneratedMSBuildEditorConfig.editorconfig
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.AssemblyInfoInputs.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.AssemblyInfo.cs
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.csproj.CoreCompileInputs.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.MvcApplicationPartsAssemblyInfo.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.RazorAssemblyInfo.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.RazorAssemblyInfo.cs
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.laba3a.Microsoft.AspNetCore.StaticWebAssets.props
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.build.laba3a.props
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.laba3a.props
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.laba3a.props
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets.pack.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets.build.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\staticwebassets.development.json
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\scopedcss\bundle\laba3a.styles.css
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.dll
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\refint\laba3a.dll
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.pdb
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\laba3a.genruntimeconfig.cache
+C:\BSTU\3 kurs\3 kurs 1 sem\DWA\laba3\laba3a\laba3a\obj\Debug\net7.0\ref\laba3a.dll

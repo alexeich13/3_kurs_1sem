@@ -1,0 +1,4 @@
+﻿  LibGraph.cpp
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\lab8\Lab01\LibGraph.cpp(87,8): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\lab8\Lab01\LibGraph.cpp(89,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Lab01.vcxproj -> C:\BSTU\3 kurs\3 kurs 1 sem\OKG\lab8\x64\Debug\Lab09.exe

@@ -1,0 +1,46 @@
+﻿<Page x:Class="Adminkp.View.InfoBookings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Adminkp.View"
+      mc:Ignorable="d" 
+      Loaded="Window_Loaded"
+      d:DesignHeight="650" d:DesignWidth="1000"  Background="#FFC0EAF6"
+      Title="InfoBookings">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" >
+            <TextBlock Text="ID бронирования" Margin="5"/>
+            <TextBox Name="BookId" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Дата бронирования" Margin="5"/>
+            <TextBox Name="BookDate" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Логин пользователя" Margin="5"/>
+            <TextBox Name="UserLog" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Название тура" Margin="5"/>
+            <TextBox Name="TourName" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Дата начала" Margin="5"/>
+            <TextBox Name="StartDate" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Дата окончания" Margin="5"/>
+            <TextBox Name="EndDate" IsReadOnly="True" Margin="5"/>
+            <TextBlock Text="Статус бронирования" Margin="5"/>
+            <TextBox Name="BookStatus" IsReadOnly="True" Margin="5"/>
+            <Button Content="Отменить" Margin="5" Background="#FFFFBFBF" Click="CancelButton_Click"/>
+        </StackPanel>
+        <DataGrid x:Name="iform" Grid.Column="1" AutoGenerateColumns="False" MouseLeftButtonUp="ShowData" MouseDoubleClick="Dob_Click">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Width="*" Binding="{Binding booking_id, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата бронирования" Width="*" Binding="{Binding booking_date, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Логин пользователя" Width="*" Binding="{Binding login_user, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Название тура" Width="*" Binding="{Binding description, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата начала" Width="*" Binding="{Binding start_date, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Дата окончания" Width="*" Binding="{Binding end_date, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Статус" Width="*" Binding="{Binding payment_status, Mode=OneWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

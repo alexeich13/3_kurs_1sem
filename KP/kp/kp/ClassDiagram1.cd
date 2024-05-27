@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="kp.Model.AppContext" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAABgAIAAAAAAAAAAAgIAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\AppContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.Bookings" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAABAAIAAAAAAACAAAAAAAAGAAAAAAAAAhAA=</HashCode>
+      <FileName>Model\Bookings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.Destinations" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Model\Destinations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.GlobalVariables" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\GlobalVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.Packages" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBCAAAAAIgAAAAIAAAAAAAAAIAAACECAAAAAAAAAA=</HashCode>
+      <FileName>Model\Packages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.Payments" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAACAAAIAEgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Payments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.Roles" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Roles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.TourOperators" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAIAAAIAAAAAAAEAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TourOperators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Model.Users" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAgAQAgAAAAAEAAAgAAAAEAgAAAAAAAQAA=</HashCode>
+      <FileName>Model\Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kp.Repository.BookingRepository" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAQAAAAAAAAAAMAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\BookingRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.Repository.PackageRepository" Collapsed="true">
+    <Position X="9.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAQAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\PackageRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.Repository.PaymentRepository" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAQAAAAAAAAAAEAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\PaymentRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.Repository.UserRepository" Collapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAQAAAAAAAAAAEAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\UserRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.View.AddPayment" Collapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAACAAEAAAAAAABIAAAAAAAAA=</HashCode>
+      <FileName>View\AddPayment.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.View.Choose" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAEAAAAAAAAAAQAAgBFAAAAAAAAMAAAAAIAAA=</HashCode>
+      <FileName>View\Choose.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.View.History" Collapsed="true">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAACgBEAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>View\History.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.View.LoginWindow" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAAAAAAAAAAAAgAAAAAAABAAAADABAAAAAA=</HashCode>
+      <FileName>View\LoginWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.View.TourInformation" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAIAAAAAAAAACAAEAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>View\TourInformation.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="kp.View.UserBookings" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAAAAAAAIAAAAAAAAAACgBEAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>View\UserBookings.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="kp.Interface.IBaseInterface&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IBaseInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="kp.Interface.IBookInterface" Collapsed="true">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAMAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IBookInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="kp.Interface.IPackageInterface" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IPackageInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="kp.Interface.IPaymentInterface" Collapsed="true">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAEAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IPaymentInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="kp.Interface.IUserInterface" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\IUserInterface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

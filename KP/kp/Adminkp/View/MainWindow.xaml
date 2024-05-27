@@ -1,0 +1,24 @@
+﻿<Window x:Class="Adminkp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adminkp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1000" Background="White">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Управление">
+                    <MenuItem Header="Выход" Click="Exit_Click"/>
+                </MenuItem>
+                <MenuItem Header="Пользователи" Click="ShowUsers_Click"/>
+                <MenuItem Header="Туры" Click="ShowTours_Click"/>
+                <MenuItem Header="Бронирования" Click="ShowBookings_Click"/>
+            </Menu>
+            <Grid>
+                <Frame x:Name="show" NavigationUIVisibility="Hidden"/>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

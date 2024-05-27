@@ -1,0 +1,49 @@
+﻿<Window x:Class="kp.View.UserBookings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kp.View"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="UserBookings" Height="460" Width="600">
+    <Grid Background="#FFAADFAA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Column="0" Grid.Row="0" Source="C:\BSTU\3 kurs\3 kurs 1 sem\KP\style\logo.jfif" Margin="40 10 0 10" HorizontalAlignment="Left"/>
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Главная" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="16" Margin="10" Background="#FFAADFAA" BorderThickness="0" Click="MainButton_Click"/>
+            <Button Content="История заказов" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="16" Margin="10" Background="#FFAADFAA" BorderThickness="0" Click="HistoryButton_Click"/>
+            <Button Content="Мои бронирования" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="16" Margin="10" Background="#FFAADFAA" BorderThickness="0" Click="BookingButton_Click"/>
+            <Button Content="Выйти" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="16" Margin="10" Background="#FFAADFAA" BorderThickness="0" HorizontalAlignment="Right" Click="LeftButton_Click"/>
+        </StackPanel>
+
+        <DataGrid x:Name="bookinfo" Grid.Row="1" Background="#FFE9F4D7" BorderBrush="White" FontSize="12" Margin="5" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер" Width="*" Binding="{Binding booking_id}"/>
+                <DataGridTextColumn Header="Страна" Width="*" Binding="{Binding country_name}"/>
+                <DataGridTextColumn Header="Город" Width="*" Binding="{Binding city_name}"/>
+                <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding price}"/>
+                <DataGridTextColumn Header="Туроператор" Width="*" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Дата начала" Width="*" Binding="{Binding start_date}"/>
+                <DataGridTextColumn Header="Дата конца" Width="*" Binding="{Binding end_date}"/>
+                <DataGridTextColumn Header="Дата бронирования" Width="*" Binding="{Binding booking_date}"/>
+                <DataGridTextColumn Header="Статус бронирования" Width="*" Binding="{Binding payment_status}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="2" Content="Оплатить" Width="150" Height="30" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="15" FontStyle="Oblique" Margin="10" Click="PayButton_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="#FFC4DFD6" BorderThickness="1" CornerRadius="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>

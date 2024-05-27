@@ -1,0 +1,16 @@
+﻿@*
+    //_CalcLink
+*@
+@{
+
+    string sum = "+";
+    string sub = "-";
+    string mul = "*";
+    string div = "/";
+    float x = 0;
+    float y = 0;
+}
+<a href="@Url.Action("_Calc", new { press = sum, x = x, y = y })">Sum</a>
+<a href="@Url.Action("_Calc", new { press = sub, x = x, y = y })">Sub</a>
+<a href="@Url.Action("_Calc", new { press = mul, x = x, y = y })">Mul</a>
+<a href="@Url.Action("_Calc", new { press = div, x = x, y = y })">Div</a>

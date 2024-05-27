@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "xyEd+TEhGvTI/u6nQVOZoXH2Y2bGVDO1/+9IQyyl7mQ=",
+  "Source": "ASPMVC03",
+  "BasePath": "_content/ASPMVC03",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ASPMVC03\\wwwroot",
+      "Source": "ASPMVC03",
+      "ContentRoot": "C:\\BSTU\\3 kurs\\3 kurs 1 sem\\DWA\\lab2a\\lab2a\\ASPMVC03\\wwwroot\\",
+      "BasePath": "_content/ASPMVC03",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

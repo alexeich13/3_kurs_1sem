@@ -1,0 +1,58 @@
+﻿<Window x:Class="kp.View.TourInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kp.View"
+        mc:Ignorable="d"
+        Title="TourInformation" Height="600" Width="800">
+    <Grid Background="#FFAADFAA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="C:\BSTU\3 kurs\3 kurs 1 sem\KP\style\logo.jfif" Margin="40 10 0 10" HorizontalAlignment="Left"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Главная" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="MainButton_Click"/>
+            <Button Content="История заказов" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="HistoryButton_Click"/>
+            <Button Content="Мои бронирования" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="BookingButton_Click"/>
+            <Button Content="Выйти" FontWeight="SemiBold" FontFamily="Times New Roman" FontSize="18" Margin="15" Background="#FFAADFAA" BorderThickness="0" Click="LeftButton_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Left" Margin="20">
+            <TextBlock Text="Номер:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Туроператор:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Страна:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Город:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Описание:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Цена:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Дата отправления:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+            <TextBlock Text="Дата возвращения:" FontWeight="Bold" FontSize="16" Margin="0 0 0 20"/>
+        </StackPanel>
+
+        <!-- Добавим TextBox'ы для вывода значений -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Right" Width="500" Height="Auto" Margin="20">
+            <TextBox x:Name="txtTourNumber" FontSize="16" Margin="0 0 0 18" IsReadOnly="True"/>
+            <TextBox x:Name="txtTourOperator" FontSize="16" Margin="0 0 0 18" IsReadOnly="True"/>
+            <TextBox x:Name="txtCountry" FontSize="16" Margin="0 0 0 18" IsReadOnly="True"/>
+            <TextBox x:Name="txtCity" FontSize="16" Margin="0 0 0 18" IsReadOnly="True"/>
+            <TextBox x:Name="txtDescription" FontSize="16" Margin="0 0 0 20" IsReadOnly="True"/>
+            <TextBox x:Name="txtPrice" FontSize="16" Margin="0 0 0 20" IsReadOnly="True"/>
+            <TextBox x:Name="txtStartDate" FontSize="16" Margin="0 0 0 20" IsReadOnly="True"/>
+            <TextBox x:Name="txtEndDate" FontSize="16" Margin="0 0 0 20" IsReadOnly="True"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Button Content="Забронировать" Width="150" Height="30" HorizontalAlignment="Center" FontFamily="Times New Roman" FontSize="15" FontStyle="Oblique" Margin="10" Click="BookButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="#FFC4DFD6" BorderThickness="1" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

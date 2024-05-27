@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\BSTU\3 kurs\3 kurs 1 sem\OS\lab5\laba5\laba5\laba5.2\Source.cpp(42,73): warning C4244: аргумент: преобразование "DWORD_PTR" в "DWORD", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OS\lab5\laba5\laba5\laba5.2\Source.cpp(49,73): warning C4244: аргумент: преобразование "DWORD_PTR" в "DWORD", возможна потеря данных
+  laba5.2.vcxproj -> C:\BSTU\3 kurs\3 kurs 1 sem\OS\lab5\laba5\laba5\x64\Debug\laba5.2.exe

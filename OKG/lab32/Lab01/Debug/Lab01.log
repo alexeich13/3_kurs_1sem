@@ -1,0 +1,37 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Lab01.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  LibBlade.cpp
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(119,33): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(119,29): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(119,25): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(119,20): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(124,37): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(124,32): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(124,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(124,21): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(211,75): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(211,58): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(211,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(211,24): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(216,75): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(216,58): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(216,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(216,24): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(221,75): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(221,58): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(221,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(221,24): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(226,75): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(226,58): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(226,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(226,24): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(232,33): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(232,20): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,38): warning C4838: Преобразование из "double" в "LONG" требует сужающего преобразования.
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,38): warning C4244: инициализация: преобразование "double" в "LONG", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,50): warning C4838: Преобразование из "double" в "LONG" требует сужающего преобразования.
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,50): warning C4244: инициализация: преобразование "double" в "LONG", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,64): warning C4838: Преобразование из "double" в "LONG" требует сужающего преобразования.
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,64): warning C4244: инициализация: преобразование "double" в "LONG", возможна потеря данных
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,76): warning C4838: Преобразование из "double" в "LONG" требует сужающего преобразования.
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Lab01\LibBlade.cpp(246,76): warning C4244: инициализация: преобразование "double" в "LONG", возможна потеря данных
+  Lab01.vcxproj -> C:\BSTU\3 kurs\3 kurs 1 sem\OKG\ОКГ\Lab3_2\Debug\Lab03.exe

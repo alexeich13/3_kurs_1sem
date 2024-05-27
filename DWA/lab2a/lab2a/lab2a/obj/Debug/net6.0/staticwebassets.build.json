@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "iF8HOrqbNgcDY2gWTrottgylhvV0ZyK99yPR+miIlvc=",
+  "Source": "lab2a",
+  "BasePath": "_content/lab2a",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "lab2a\\wwwroot",
+      "Source": "lab2a",
+      "ContentRoot": "C:\\BSTU\\3 kurs\\3 kurs 1 sem\\DWA\\lab2a\\lab2a\\lab2a\\wwwroot\\",
+      "BasePath": "_content/lab2a",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\BSTU\\3 kurs\\3 kurs 1 sem\\DWA\\lab2a\\lab2a\\lab2a\\wwwroot\\Index.html",
+      "SourceId": "lab2a",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BSTU\\3 kurs\\3 kurs 1 sem\\DWA\\lab2a\\lab2a\\lab2a\\wwwroot\\",
+      "BasePath": "_content/lab2a",
+      "RelativePath": "Index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    }
+  ]
+}

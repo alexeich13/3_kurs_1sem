@@ -1,0 +1,595 @@
+SQLite version 3.44.2 2023-11-24 11:41:44 (UTF-16 console I/O)
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> create database
+   ...> ;
+Parse error: near "database": syntax error
+  create database ;
+         ^--- error here
+sqlite> sqlite3 BD.db;
+Parse error: near "sqlite3": syntax error
+  sqlite3 BD.db;
+  ^--- error here
+sqlite> .open BD.db
+sqlite> CREATE TABLE IF NOT EXISTS Destinations (
+(x1...>     destination_id INTEGER PRIMARY KEY,
+(x1...>     country_name NVARCHAR(255) NOT NULL,
+(x1...>     city_name NVARCHAR(255) NOT NULL
+(x1...> );
+sqlite> .tables
+Destinations
+sqlite> CREATE TABLE IF NOT EXISTS TourOperators (
+(x1...>     tour_operator_id INTEGER PRIMARY KEY,
+(x1...>     name NVARCHAR(255) NOT NULL,
+(x1...>     contact_info NVARCHAR(255),
+(x1...>     website NVARCHAR(255)
+(x1...> );
+sqlite> CREATE TABLE IF NOT EXISTS Packages (
+(x1...>     package_id INTEGER PRIMARY KEY,
+(x1...>     tour_operator_id INTEGER,
+(x1...>     destination_id INTEGER,
+(x1...>     description NVARCHAR(MAX),
+(x1...>     price DECIMAL(10, 2) NOT NULL,
+(x1...>     start_date DATE NOT NULL,
+(x1...>     end_date DATE NOT NULL,
+(x1...>     FOREIGN KEY (tour_operator_id) REFERENCES TourOperators(tour_operator_id),
+(x1...>     FOREIGN KEY (destination_id) REFERENCES Destinations(destination_id)
+(x1...> );
+Parse error: near "MAX": syntax error
+  destination_id INTEGER,      description NVARCHAR(MAX),     price DECIMAL(10,
+                                      error here ---^
+sqlite> PRAGMA foreign_keys = ON; -- Включаем поддержку внешних ключей
+sqlite>
+sqlite> -- Создание таблицы "Destinations" с названием города и страны
+sqlite> CREATE TABLE IF NOT EXISTS Destinations (
+(x1...>     destination_id INTEGER PRIMARY KEY,
+(x1...>     country_name NVARCHAR(255) NOT NULL,
+(x1...>     city_name NVARCHAR(255) NOT NULL
+(x1...> );
+sqlite>
+sqlite> -- Создание таблицы "Туроператоры" (Tour Operators)
+sqlite> CREATE TABLE IF NOT EXISTS TourOperators (
+(x1...>     tour_operator_id INTEGER PRIMARY KEY,
+(x1...>     name NVARCHAR(255) NOT NULL,
+(x1...>     contact_info NVARCHAR(255),
+(x1...>     website NVARCHAR(255)
+(x1...> );
+sqlite>
+sqlite> -- Создание таблицы "Путевки" (Packages)
+sqlite> CREATE TABLE IF NOT EXISTS Packages (
+(x1...>     package_id INTEGER PRIMARY KEY,
+(x1...>     tour_operator_id INTEGER,
+(x1...>     destination_id INTEGER,
+(x1...>     description NVARCHAR(MAX),
+(x1...>     price DECIMAL(10, 2) NOT NULL,
+(x1...>     start_date DATE NOT NULL,
+(x1...>     end_date DATE NOT NULL,
+(x1...>     FOREIGN KEY (tour_operator_id) REFERENCES TourOperators(tour_operator_id),
+(x1...>     FOREIGN KEY (destination_id) REFERENCES Destinations(destination_id)
+(x1...> );
+Parse error: near "MAX": syntax error
+  destination_id INTEGER,      description NVARCHAR(MAX),     price DECIMAL(10,
+                                      error here ---^
+sqlite>
+sqlite> -- Создание таблицы "Клиенты" (Customers)
+sqlite> CREATE TABLE IF NOT EXISTS Customers (
+(x1...>     customer_id INTEGER PRIMARY KEY,
+(x1...>     first_name NVARCHAR(255) NOT NULL,
+(x1...>     last_name NVARCHAR(255) NOT NULL,
+(x1...>     email NVARCHAR(255),
+(x1...>     phone NVARCHAR(20),
+(x1...>     address NVARCHAR(MAX)
+(x1...> );
+Parse error: near "MAX": syntax error
+  55),     phone NVARCHAR(20),     address NVARCHAR(MAX) );
+                                      error here ---^
+sqlite>
+sqlite> -- Создание таблицы "Бронирования" (Bookings)
+sqlite> CREATE TABLE IF NOT EXISTS Bookings (
+(x1...>     booking_id INTEGER PRIMARY KEY,
+(x1...>     customer_id INTEGER,
+(x1...>     package_id INTEGER,
+(x1...>     booking_date DATE NOT NULL,
+(x1...>     payment_status NVARCHAR(50),
+(x1...>     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+(x1...>     FOREIGN KEY (package_id) REFERENCES Packages(package_id)
+(x1...> );
+sqlite>
+sqlite> -- Создание таблицы "Платежи" (Payments)
+sqlite> CREATE TABLE IF NOT EXISTS Payments (
+(x1...>     payment_id INTEGER PRIMARY KEY,
+(x1...>     booking_id INTEGER,
+(x1...>     payment_date DATE NOT NULL,
+(x1...>     amount DECIMAL(10, 2) NOT NULL,
+(x1...>     FOREIGN KEY (booking_id) REFERENCES Bookings(booking_id)
+(x1...>
+(x1...>
+(x1...> ;
+Parse error: near ";": syntax error
+  EY (booking_id) REFERENCES Bookings(booking_id)   ;
+                                      error here ---^
+sqlite> CREATE TABLE IF NOT EXISTS Packages (
+(x1...>     package_id INTEGER PRIMARY KEY,
+(x1...>     tour_operator_id INTEGER,
+(x1...>     destination_id INTEGER,
+(x1...>     description NVARCHAR(MAX),
+(x1...>     price DECIMAL(10, 2) NOT NULL,
+(x1...>     start_date DATE NOT NULL,
+(x1...>     end_date DATE NOT NULL,
+(x1...>     FOREIGN KEY (tour_operator_id) REFERENCES TourOperators(tour_operator_id),
+(x1...>     FOREIGN KEY (destination_id) REFERENCES Destinations(destination_id)
+(x1...> ;;
+Parse error: near "MAX": syntax error
+  destination_id INTEGER,      description NVARCHAR(MAX),     price DECIMAL(10,
+                                      error here ---^
+sqlite> CREATE TABLE IF NOT EXISTS Packages (
+(x1...>     package_id INTEGER PRIMARY KEY,
+(x1...>     tour_operator_id INTEGER,
+(x1...>     destination_id INTEGER,
+(x1...>     description NVARCHAR(255),
+(x1...>     price DECIMAL(10, 2) NOT NULL,
+(x1...>     start_date DATE NOT NULL,
+(x1...>     end_date DATE NOT NULL,
+(x1...>     FOREIGN KEY (tour_operator_id) REFERENCES TourOperators(tour_operator_id),
+(x1...>     FOREIGN KEY (destination_id) REFERENCES Destinations(destination_id)
+(x1...> );
+sqlite> CREATE TABLE IF NOT EXISTS Customers (
+(x1...>     customer_id INTEGER PRIMARY KEY,
+(x1...>     first_name NVARCHAR(255) NOT NULL,
+(x1...>     last_name NVARCHAR(255) NOT NULL,
+(x1...>     email NVARCHAR(255),
+(x1...>     phone NVARCHAR(20),
+(x1...>     address NVARCHAR(255)
+(x1...> );
+sqlite> CREATE TABLE IF NOT EXISTS Bookings (
+(x1...>     booking_id INTEGER PRIMARY KEY,
+(x1...>     customer_id INTEGER,
+(x1...>     package_id INTEGER,
+(x1...>     booking_date DATE NOT NULL,
+(x1...>     payment_status NVARCHAR(50),
+(x1...>     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+(x1...>     FOREIGN KEY (package_id) REFERENCES Packages(package_id)
+(x1...> );
+sqlite> CREATE TABLE IF NOT EXISTS Payments (
+(x1...>     payment_id INTEGER PRIMARY KEY,
+(x1...>     booking_id INTEGER,
+(x1...>     payment_date DATE NOT NULL,
+(x1...>     amount DECIMAL(10, 2) NOT NULL,
+(x1...>     FOREIGN KEY (booking_id) REFERENCES Bookings(booking_id)
+(x1...> );
+sqlite> .tables
+Bookings       Destinations   Payments
+Customers      Packages       TourOperators
+sqlite> .schema Bookings
+CREATE TABLE Bookings (
+    booking_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    package_id INTEGER,
+    booking_date DATE NOT NULL,
+    payment_status NVARCHAR(50),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (package_id) REFERENCES Packages(package_id)
+);
+sqlite> INSERT INTO Destinations (destination_id, country_name, city_name)
+   ...> VALUES
+   ...> (1, 'USA', 'New York'),
+   ...> (2, 'France', 'Paris'),
+   ...> (3, 'Italy', 'Rome'),
+   ...> (4, 'Japan', 'Tokyo'),
+   ...> (5, 'Australia', 'Sydney'),
+   ...> (6, 'Canada', 'Vancouver'),
+   ...> (7, 'Spain', 'Barcelona'),
+   ...> (8, 'Germany', 'Berlin'),
+   ...> (9, 'Brazil', 'Rio de Janeiro'),
+   ...> (10, 'China', 'Beijing'),
+   ...> (11, 'Greece', 'Athens'),
+   ...> (12, 'Italy', 'Venice'),
+   ...> (13, 'Spain', 'Seville'),
+   ...> (14, 'France', 'Nice'),
+   ...> (15, 'USA', 'Los Angeles'),
+   ...> (16, 'Australia', 'Sydney'),
+   ...> (17, 'Japan', 'Kyoto'),
+   ...> (18, 'Brazil', 'Rio de Janeiro'),
+   ...> (19, 'Canada', 'Vancouver'),
+   ...> (20, 'China', 'Shanghai'),
+   ...> (21, 'Germany', 'Munich'),
+   ...> (22, 'India', 'Mumbai'),
+   ...> (23, 'South Africa', 'Cape Town'),
+   ...> (24, 'Mexico', 'Cancun'),
+   ...> (25, 'Thailand', 'Bangkok'),
+   ...> (26, 'Russia', 'St. Petersburg'),
+   ...> (27, 'United Kingdom', 'Edinburgh'),
+   ...> (28, 'Netherlands', 'Amsterdam'),
+   ...> (29, 'Turkey', 'Istanbul'),
+   ...> (30, 'Argentina', 'Buenos Aires'),
+   ...> (31, 'Switzerland', 'Zurich'),
+   ...> (32, 'Egypt', 'Cairo'),
+   ...> (33, 'Portugal', 'Lisbon'),
+   ...> (34, 'New Zealand', 'Auckland'),
+   ...> (35, 'Norway', 'Oslo'),
+   ...> (36, 'Sweden', 'Stockholm'),
+   ...> (37, 'Denmark', 'Copenhagen'),
+   ...> (38, 'South Korea', 'Seoul'),
+   ...> (39, 'Iceland', 'Reykjavik'),
+   ...> (40, 'Singapore', 'Singapore');
+sqlite> INSERT INTO TourOperators (tour_operator_id, name, contact_info, website)
+   ...> VALUES
+   ...> (1, 'TourCo1', 'Contact1', 'www.tourco1.com'),
+   ...> (2, 'TourCo2', 'Contact2', 'www.tourco2.com'),
+   ...> (3, 'TourCo3', 'Contact3', 'www.tourco3.com'),
+   ...> (4, 'TourCo4', 'Contact4', 'www.tourco4.com'),
+   ...> (5, 'TourCo5', 'Contact5', 'www.tourco5.com'),
+   ...> (6, 'TourCo6', 'Contact6', 'www.tourco6.com'),
+   ...> (7, 'TourCo7', 'Contact7', 'www.tourco7.com'),
+   ...> (8, 'TourCo8', 'Contact8', 'www.tourco8.com'),
+   ...> (9, 'TourCo9', 'Contact9', 'www.tourco9.com'),
+   ...> (10, 'TourCo10', 'Contact10', 'www.tourco10.com'),
+   ...> (11, 'ExploreWorld', 'info@exploreworld.com', 'www.exploreworld.com'),
+   ...> (12, 'TravelExperts', 'contact@travelexperts.com', 'www.travelexperts.com'),
+   ...> (13, 'AdventuresUnlimited', 'adventures@unlimited.com', 'www.adventuresunlimited.com'),
+   ...> (14, 'GlobalGetaways', 'global@getaways.com', 'www.globalgetaways.com'),
+   ...> (15, 'EpicJourneys', 'info@epicjourneys.com', 'www.epicjourneys.com'),
+   ...> (16, 'DiscoverDestinations', 'discover@destinations.com', 'www.discoverdestinations.com'),
+   ...> (17, 'WanderlustTravel', 'wanderlust@travel.com', 'www.wanderlusttravel.com'),
+   ...> (18, 'JourneyMasters', 'journey@masters.com', 'www.journeymasters.com'),
+   ...> (19, 'InfinityVoyages', 'info@infinityvoyages.com', 'www.infinityvoyages.com'),
+   ...> (20, 'DreamyDestinations', 'dreamy@destinations.com', 'www.dreamydestinations.com'),
+   ...> (21, 'VividVentures', 'vivid@ventures.com', 'www.vividventures.com'),
+   ...> (22, 'RoamingRovers', 'roaming@rovers.com', 'www.roamingrovers.com'),
+   ...> (23, 'ExoticExplorations', 'exotic@explorations.com', 'www.exoticexplorations.com'),
+   ...> (24, 'SunsetAdventures', 'sunset@adventures.com', 'www.sunsetadventures.com'),
+   ...> (25, 'PacificParadise', 'pacific@paradise.com', 'www.pacificparadise.com'),
+   ...> (26, 'MountainHighTours', 'mountain@tours.com', 'www.mountainhightours.com'),
+   ...> (27, 'OceanOdysseys', 'ocean@odysseys.com', 'www.oceanodysseys.com'),
+   ...> (28, 'EnchantingEscapes', 'enchanting@escapes.com', 'www.enchantingescapes.com'),
+   ...> (29, 'MysticJourneys', 'mystic@journeys.com', 'www.mysticjourneys.com'),
+   ...> (30, 'PinnaclePlaces', 'pinnacle@places.com', 'www.pinnacleplaces.com');
+sqlite> INSERT INTO Packages (package_id, tour_operator_id, destination_id, description, price, start_date, end_date)
+   ...> VALUES
+   ...> (1, 1, 1, 'Explore the Big Apple', 1500.00, '2023-06-01', '2023-06-10'),
+   ...> (2, 2, 5, 'Romantic Paris Getaway', 2000.00, '2023-07-15', '2023-07-25'),
+   ...> (3, 3, 9, 'Italian Splendors Tour', 2500.00, '2023-08-05', '2023-08-15'),
+   ...> (4, 4, 14, 'Discover Tokyo', 1800.00, '2023-09-10', '2023-09-20'),
+   ...> (5, 5, 19, 'Sydney Adventure', 2200.00, '2023-10-01', '2023-10-10'),
+   ...> (6, 6, 23, 'Explore Mumbai', 2000.00, '2023-11-15', '2023-11-25'),
+   ...> (7, 7, 28, 'Barcelona Discovery', 1800.00, '2023-12-05', '2023-12-15'),
+   ...> (8, 8, 33, 'Berlin City Escape', 2100.00, '2024-01-10', '2024-01-20'),
+   ...> (9, 9, 38, 'Rio Carnival Experience', 2800.00, '2024-02-15', '2024-02-25'),
+   ...> (10, 10, 2, 'Beijing Cultural Tour', 2400.00, '2024-03-05', '2024-03-15'),
+   ...> (11, 11, 7, 'Athens Mythical Journey', 2000.00, '2024-04-10', '2024-04-20'),
+   ...> (12, 12, 12, 'Venice Romantic Escape', 2200.00, '2024-05-15', '2024-05-25'),
+   ...> (13, 13, 17, 'Seville Flamenco Nights', 1800.00, '2024-06-01', '2024-06-10'),
+   ...> (14, 14, 22, 'Nice Riviera Retreat', 2500.00, '2024-07-15', '2024-07-25'),
+   ...> (15, 15, 27, 'Los Angeles Hollywood Experience', 2000.00, '2024-08-05', '2024-08-15'),
+   ...> (16, 16, 32, 'Sydney Opera House Spectacular', 2200.00, '2024-09-10', '2024-09-20'),
+   ...> (17, 17, 37, 'Kyoto Cherry Blossom Tour', 1800.00, '2024-10-01', '2024-10-10'),
+   ...> (18, 18, 5, 'Rio de Janeiro Samba Carnival', 2100.00, '2024-11-15', '2024-11-25'),
+   ...> (19, 19, 10, 'Vancouver Nature Retreat', 2800.00, '2024-12-05', '2024-12-15'),
+   ...> (20, 20, 15, 'Shanghai Modern Wonders', 2400.00, '2025-01-10', '2025-01-20');
+sqlite> INSERT INTO Customers (customer_id, first_name, last_name, email, phone, address)
+   ...> VALUES
+   ...> (1, 'John', 'Doe', 'john.doe@email.com', '123-456-7890', '123 Main St, Cityville'),
+   ...> (2, 'Jane', 'Smith', 'jane.smith@email.com', '987-654-3210', '456 Oak St, Townsville'),
+   ...> (3, 'Bob', 'Johnson', 'bob.johnson@email.com', '555-123-4567', '789 Pine St, Villagetown'),
+   ...> (4, 'Alice', 'Williams', 'alice.williams@email.com', '789-456-1230', '101 Cedar St, Hamletville'),
+   ...> (5, 'Charlie', 'Brown', 'charlie.brown@email.com', '321-654-0987', '202 Elm St, Riverside'),
+   ...> (6, 'Eva', 'Davis', 'eva.davis@email.com', '444-777-2222', '303 Birch St, Hillside'),
+   ...> (7, 'Michael', 'Clark', 'michael.clark@email.com', '111-333-9999', '404 Maple St, Lakeside'),
+   ...> (8, 'Olivia', 'White', 'olivia.white@email.com', '777-888-4444', '505 Redwood St, Mountainside'),
+   ...> (9, 'Daniel', 'Taylor', 'daniel.taylor@email.com', '666-999-5555', '606 Pine St, Beachtown'),
+   ...> (10, 'Sophia', 'Anderson', 'sophia.anderson@email.com', '222-444-6666', '707 Oak St, Countryside');
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status)
+   ...> VALUES
+   ...> (1, 1, 1, '2023-05-15', 'Paid'),
+   ...> (2, 2, 5, '2023-06-20', 'Pending'),
+   ...> (3, 3, 9, '2023-07-10', 'Paid'),
+   ...> (4, 4, 14, '2023-08-25', 'Pending'),
+   ...> (5, 5, 19, '2023-09-05', 'Paid'),
+   ...> (6, 6, 23, '2023-10-15', 'Paid'),
+   ...> (7, 7, 28, '2023-11-01', 'Pending'),
+   ...> (8, 8, 33, '2023-12-10', 'Paid'),
+   ...> (9, 9, 38, '2024-01-20', 'Paid'),
+   ...> (10, 10, 2, '2024-02-05', 'Pending');
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> delete * from Bookings;
+Parse error: near "*": syntax error
+  delete * from Bookings;
+         ^--- error here
+sqlite> delete from Bookings
+   ...> ;
+sqlite> delete from Bookings;
+sqlite> delete from Customers;
+sqlite> delete from TourOprators;
+Parse error: no such table: TourOprators
+sqlite> delete from TourOperators;
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> delete from Packages;
+sqlite> delete from TourOperators;
+sqlite> delete from Destinstions;
+Parse error: no such table: Destinstions
+sqlite> delete from Destinations;
+sqlite> INSERT INTO Destinations (destination_id, country_name, city_name)
+   ...> VALUES
+   ...> (1, 'USA', 'New York'),
+   ...> (2, 'France', 'Paris');
+sqlite> INSERT INTO TourOperators (tour_operator_id, name, contact_info, website)
+   ...> VALUES
+   ...> (1, 'TourCo1', 'Contact1', 'www.tourco1.com'),
+   ...> (2, 'TourCo2', 'Contact2', 'www.tourco2.com');
+sqlite> INSERT INTO Packages (package_id, tour_operator_id, destination_id, description, price, start_date, end_date)
+   ...> VALUES
+   ...> (1, 1, 1, 'Package to New York', 2000.00, '2023-02-01', '2023-02-10'),
+   ...> (2, 2, 2, 'Package to Paris', 1800.00, '2023-03-01', '2023-03-10');
+sqlite> INSERT INTO Customers (customer_id, first_name, last_name, email, phone, address)
+   ...> VALUES
+   ...> (1, 'John', 'Doe', 'john.doe@email.com', '123456789', '123 Main St'),
+   ...> (2, 'Jane', 'Smith', 'jane.smith@email.com', '987654321', '456 Oak St'),
+   ...> ;
+Parse error: near ";": syntax error
+  ane.smith@email.com', '987654321', '456 Oak St'), ;
+                                      error here ---^
+sqlite> INSERT INTO Customers (customer_id, first_name, last_name, email, phone, address)
+   ...> VALUES
+   ...> (1, 'John', 'Doe', 'john.doe@email.com', '123456789', '123 Main St'),
+   ...> (2, 'Jane', 'Smith', 'jane.smith@email.com', '987654321', '456 Oak St');
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status)
+   ...> VALUES
+   ...> (1, 1, 1, '2023-02-10', 'Paid'),
+   ...> (2, 2, 2, '2023-03-15', 'Pending');
+sqlite> INSERT INTO Payments (payment_id, booking_id, payment_date, amount)
+   ...> VALUES
+   ...> (1, 1, '2023-02-15', 2000.00),
+   ...> (2, 2, '2023-03-20', 1800.00);
+sqlite> select * from Bookings;
+1|1|1|2023-02-10|Paid
+2|2|2|2023-03-15|Pending
+sqlite> PRAGMA foreign_keys = ON;
+sqlite> BEGIN TRANSACTION;
+sqlite>
+sqlite> -- Добавление нового клиента
+sqlite> INSERT INTO Customers (first_name, last_name, email, phone, address)
+   ...> VALUES ('John', 'Doe', 'john.doe@example.com', '123-456-7890', '123 Main St');
+sqlite>
+sqlite> -- Получение ID нового клиента
+sqlite> SELECT last_insert_rowid() AS new_customer_id;
+3
+sqlite>
+sqlite> -- Добавление бронирования для нового клиента
+sqlite> INSERT INTO Bookings (customer_id, package_id, booking_date, payment_status)
+   ...> VALUES (last_insert_rowid(), 1, '2023-01-01', 'Pending');
+sqlite>
+sqlite> -- Коммит транзакции
+sqlite> COMMIT;
+sqlite>
+sqlite> BEGIN TRANSACTION;
+sqlite> INSERT INTO Customers (first_name, last_name, email, phone, address)
+   ...> VALUES ('John', 'Doe', 'john.doe@example.com', '123-456-7890', '123 Main St');
+sqlite> SELECT last_insert_rowid() AS new_customer_id;
+4
+sqlite> INSERT INTO Bookings (customer_id, package_id, booking_date, payment_status)
+   ...> VALUES (last_insert_rowid(), 1, '2023-01-01', 'Pending');
+sqlite> COMMIT;
+sqlite> select * from Bookings
+   ...> ;
+1|1|1|2023-02-10|Paid
+2|2|2|2023-03-15|Pending
+3|3|1|2023-01-01|Pending
+4|4|1|2023-01-01|Pending
+sqlite> select * from Customers
+   ...> ;
+1|John|Doe|john.doe@email.com|123456789|123 Main St
+2|Jane|Smith|jane.smith@email.com|987654321|456 Oak St
+3|John|Doe|john.doe@example.com|123-456-7890|123 Main St
+4|John|Doe|john.doe@example.com|123-456-7890|123 Main St
+sqlite> BEGIN TRANSACTION;
+sqlite> UPDATE Bookings SET payment_status = 'Paid' WHERE booking_id = 1;
+sqlite> COMMIT
+   ...> s
+   ...> ;
+Parse error: near "s": syntax error
+  COMMIT s ;
+         ^--- error here
+sqlite> BEGIN TRANSACTION;
+Runtime error: cannot start a transaction within a transaction
+sqlite> UPDATE Bookings SET payment_status = 'Paid' WHERE booking_id = 2;
+sqlite> COMMIT;
+sqlite> select * from Bookings
+   ...> ;
+1|1|1|2023-02-10|Paid
+2|2|2|2023-03-15|Paid
+3|3|1|2023-01-01|Pending
+4|4|1|2023-01-01|Pending
+sqlite> BEGIN TRANSACTION;
+sqlite> UPDATE Bookings SET payment_status = 'Paid' WHERE booking_id = 3;
+sqlite> COMMIT;
+sqlite> select * from Bookings
+   ...> ;
+1|1|1|2023-02-10|Paid
+2|2|2|2023-03-15|Paid
+3|3|1|2023-01-01|Paid
+4|4|1|2023-01-01|Pending
+sqlite> BEGIN TRANSACTION;
+sqlite> DELETE FROM Bookings WHERE customer_id = 1;
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> DELETE FROM Customers WHERE customer_id = 1;
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> COMMIT;
+sqlite> begin transaction;
+sqlite> delete from Bookings where customer_id = 1;
+begin transaction;
+delete from Bookings where customer_id = 2;
+commit;
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> BEGIN TRANSACTION;
+Runtime error: cannot start a transaction within a transaction
+sqlite> DELETE FROM Payments WHERE booking_id IN (SELECT booking_id FROM Bookings WHERE customer_id = 1);
+sqlite> COMMIT;
+sqlite> select * from Payments;
+2|2|2023-03-20|1800
+sqlite> CREATE VIEW BookingDetails AS
+   ...> SELECT
+   ...>     B.booking_id,
+   ...>     B.customer_id,
+   ...>     C.first_name || ' ' || C.last_name AS customer_name,
+   ...>     P.package_id,
+   ...>     P.description AS package_description,
+   ...>     P.price AS package_price,
+   ...>     B.booking_date,
+   ...>     B.payment_status,
+   ...>     PY.payment_date,
+   ...>     PY.amount AS payment_amount
+   ...> FROM Bookings B
+   ...> JOIN Customers C ON B.customer_id = C.customer_id
+   ...> JOIN Packages P ON B.package_id = P.package_id
+   ...> LEFT JOIN Payments PY ON B.booking_id = PY.booking_id;
+sqlite> select * from BookingDetails;
+1|1|John Doe|1|Package to New York|2000|2023-02-10|Paid||
+2|2|Jane Smith|2|Package to Paris|1800|2023-03-15|Paid|2023-03-20|1800
+3|3|John Doe|1|Package to New York|2000|2023-01-01|Paid||
+4|4|John Doe|1|Package to New York|2000|2023-01-01|Pending||
+sqlite> CREATE INDEX idx_booking_customer_id ON Bookings(customer_id);
+sqlite> CREATE INDEX idx_booking_package_id ON Bookings(package_id);
+sqlite> PRAGMA index_list(Bookings);
+0|idx_booking_package_id|0|c|0
+1|idx_booking_customer_id|0|c|0
+sqlite> CREATE TRIGGER IF NOT EXISTS update_payment_status
+   ...> AFTER INSERT ON Payments
+   ...> FOR EACH ROW
+   ...> BEGIN
+   ...>     UPDATE Bookings
+   ...>     SET payment_status = 'Paid'
+   ...>     WHERE booking_id = NEW.booking_id;
+   ...> END;
+sqlite> INSERT INTO Customers (customer_id, first_name, last_name) VALUES (1, 'John', 'Doe');
+Runtime error: UNIQUE constraint failed: Customers.customer_id (19)
+sqlite> INSERT INTO Packages (package_id, tour_operator_id, destination_id, description, price, start_date, end_date) VALUES (1, 1, 1, 'Test Package', 1000.00, '2023-01-01', '2023-01-10');
+Runtime error: UNIQUE constraint failed: Packages.package_id (19)
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status) VALUES (1, 1, 1, '2023-01-05', 'Pending');
+Runtime error: UNIQUE constraint failed: Bookings.booking_id (19)
+sqlite> INSERT INTO Bookings (booking_id, customer_id, payment_status) VALUES (1, 1, 'Pending');
+Runtime error: NOT NULL constraint failed: Bookings.booking_date (19)
+sqlite> INSERT INTO Payments (payment_id, booking_id, amount) VALUES (1, 1, 500.00);
+Runtime error: NOT NULL constraint failed: Payments.payment_date (19)
+sqlite> INSERT INTO Bookings (booking_id, customer_id, payment_status) VALUES (1, 1, 'Pending');
+Runtime error: NOT NULL constraint failed: Bookings.booking_date (19)
+sqlite> .schema Bookings
+CREATE TABLE Bookings (
+    booking_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    package_id INTEGER,
+    booking_date DATE NOT NULL,
+    payment_status NVARCHAR(50),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (package_id) REFERENCES Packages(package_id)
+);
+CREATE INDEX idx_booking_customer_id ON Bookings(customer_id);
+CREATE INDEX idx_booking_package_id ON Bookings(package_id);
+sqlite> .schema Payments
+CREATE TABLE Payments (
+    payment_id INTEGER PRIMARY KEY,
+    booking_id INTEGER,
+    payment_date DATE NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (booking_id) REFERENCES Bookings(booking_id)
+);
+CREATE TRIGGER update_payment_status
+AFTER INSERT ON Payments
+FOR EACH ROW
+BEGIN
+    UPDATE Bookings
+    SET payment_status = 'Paid'
+    WHERE booking_id = NEW.booking_id;
+END;
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status)
+   ...> VALUES
+   ...> (1, 1, 3, '2023-01-05', 'Pending'),
+   ...> (2, 2, 1, '2023-02-10', 'Pending');
+Runtime error: UNIQUE constraint failed: Bookings.booking_id (19)
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status)
+   ...> VALUES
+   ...> (5, 1, 3, '2023-01-05', 'Pending'),
+   ...> (6, 2, 1, '2023-02-10', 'Pending');
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status)
+   ...> VALUES
+   ...> (5, 1, 3, '2023-01-05', 'Pending'),
+   ...> (6, 2, 1, '2023-02-10', 'Pending');
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> INSERT INTO Payments (payment_id, booking_id, payment_date, amount)
+   ...> VALUES
+   ...> (1, 5, '2023-01-10', 1500.00),
+   ...> (2, 6, '2023-02-15', 2000.00);
+Runtime error: UNIQUE constraint failed: Payments.payment_id (19)
+sqlite> INSERT INTO Bookings (booking_id, customer_id, package_id, booking_date, payment_status)
+   ...> VALUES
+   ...> (5, 1, 3, '2023-01-05', 'Pending'),
+   ...> (6, 2, 1, '2023-02-10', 'Pending');
+Runtime error: FOREIGN KEY constraint failed (19)
+sqlite> CREATE TRIGGER update_booking_status
+   ...> AFTER INSERT ON Payments
+   ...> BEGIN
+   ...>     UPDATE Bookings
+   ...>     SET payment_status = (
+(x1...>         CASE
+(x1...>             WHEN (SELECT COUNT(*) FROM Payments WHERE booking_id = NEW.booking_id) = (
+(x2...>                 SELECT COUNT(*) FROM Bookings WHERE booking_id = NEW.booking_id
+(x2...>             ) THEN 'Paid'
+(x1...>             ELSE 'Pending'
+(x1...>         END
+(x1...>     )
+   ...>     WHERE booking_id = NEW.booking_id;
+   ...> END;
+sqlite> selet * from Bookings
+   ...> ;
+Parse error: near "selet": syntax error
+  selet * from Bookings ;
+  ^--- error here
+sqlite> select * from Bookings;
+1|1|1|2023-02-10|Paid
+2|2|2|2023-03-15|Paid
+3|3|1|2023-01-01|Paid
+4|4|1|2023-01-01|Pending
+sqlite> select * from Payments;
+2|2|2023-03-20|1800
+sqlite> INSERT INTO Payments (booking_id, payment_date, amount) VALUES
+   ...> (4, '2023-04-25', 2200.00);
+sqlite> select * from Bookings;
+1|1|1|2023-02-10|Paid
+2|2|2|2023-03-15|Paid
+3|3|1|2023-01-01|Paid
+4|4|1|2023-01-01|Paid
+sqlite>
+
+
+
+
+
+lab:
+
+.open BD.db
+.tables
+
+BEGIN TRANSACTION;
+INSERT INTO Customers (first_name, last_name, email, phone, address)
+VALUES ('Johnny', 'Lob', 'johnny.lob@example.com', '123-456-7823' );
+COMMIT;
+
+BEGIN TRANSACTION;
+UPDATE CUSTOMERS SET last_name = 'Loban' WHERE customer_id = 6;
+COMMIT;
+SELECT * FROM CUSTOMERS;
+
+PRAGMA foreign_keys = ON;
+begin transaction;
+delete from Bookings where customer_id = 2;
+commit;
+
+SELECT * FROM BookingDetails;
+
+pragma index_list(Bookings);
+
+INSERT INTO Payments (booking_id, payment_date, amount) VALUES
+(6, '2023-04-25', 2200.00);
+
+

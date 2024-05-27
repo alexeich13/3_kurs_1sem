@@ -1,0 +1,4 @@
+﻿  main.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+C:\BSTU\3 kurs\3 kurs 1 sem\OKG\lab6\Lab-5\LibPyramid.h(171,26): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "RGB"
+  Lab-5.vcxproj -> C:\BSTU\3 kurs\3 kurs 1 sem\OKG\lab6\Debug\Lab-5.exe

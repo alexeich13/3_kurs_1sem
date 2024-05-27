@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c473bc2a8df544a68fe9405ecef0156f" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_KPModel.Bookings" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.Destinations" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.Packages" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.Payments" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.Roles" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.TourOperators" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_KPModel.Users" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="DB_KPModel.FK__Bookings__packag__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_KPModel.FK__Bookings__users___440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_KPModel.FK__Payments__bookin__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_KPModel.FK__Packages__destin__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_KPModel.FK__Packages__tour_o__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_KPModel.FK__Users__role_id__412EB0B6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

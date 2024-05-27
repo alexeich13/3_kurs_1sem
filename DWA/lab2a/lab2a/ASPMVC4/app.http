@@ -1,0 +1,11 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@hostname = localhost
+@port = 7098
+###
+GET https://{{hostname}}:{{port}}/Status/Index
+###
+GET https://{{hostname}}:{{port}}/Status/s200
+###
+GET https://{{hostname}}:{{port}}/Status/s300
+###
+GET https://{{hostname}}:{{port}}/Status/s500
